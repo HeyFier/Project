@@ -1,0 +1,196 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: μVision V5.28.0.0
+Copyright (C) 2019 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: hf x, HP Inc., LIC=FYKYW-QUDGE-SB6EJ-UKG96-EQB6A-Y50DD
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.28.0.0
+Toolchain Path:  E:\environment\mdk5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 6 (build 750)
+Assembler:       Armasm.exe V5.06 update 6 (build 750)
+Linker/Locator:  ArmLink.exe V5.06 update 6 (build 750)
+Library Manager: ArmAr.exe V5.06 update 6 (build 750)
+Hex Converter:   FromElf.exe V5.06 update 6 (build 750)
+CPU DLL:         SARMCM3.DLL V5.28.0.0
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      CMSIS_AGDI.dll V1.31.18.0
+Dialog DLL:      TCM.DLL V1.36.2.0
+ 
+<h2>Project:</h2>
+E:\c-WorkSpace\stm32F1实验\项目\智能门锁\Template.uvprojx
+Project File Date:  05/08/2024
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 6 (build 750)', folder: 'E:\environment\mdk5\ARM\ARMCC\Bin'
+Rebuild target 'Target 1'
+assembling startup_stm32f10x_md.s...
+compiling misc.c...
+Warning: C4008W: splitting LDM/STM has no benefit
+Libraries\STM32F10x_StdPeriph_Driver\src\misc.c: 1 warning, 0 errors
+compiling stm32f10x_it.c...
+Warning: C4008W: splitting LDM/STM has no benefit
+User\stm32f10x_it.c: 1 warning, 0 errors
+compiling stm32f10x_exti.c...
+Warning: C4008W: splitting LDM/STM has no benefit
+Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_exti.c: 1 warning, 0 errors
+compiling stm32f10x_gpio.c...
+Warning: C4008W: splitting LDM/STM has no benefit
+Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_gpio.c: 1 warning, 0 errors
+compiling stm32f10x_rcc.c...
+Warning: C4008W: splitting LDM/STM has no benefit
+Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c: 1 warning, 0 errors
+compiling main.c...
+Warning: C4008W: splitting LDM/STM has no benefit
+User\main.h(25): warning:  #1-D: last line of file ends without a newline
+  extern SysTemPat sys;
+User\main.c(45): warning:  #550-D: variable "time2"  was set but never used
+  	int time2;		//锁屏时间
+User\main.c(200): warning:  #177-D: variable "cnt"  was declared but never referenced
+  	u8 cnt = 0;
+User\main.c(201): warning:  #177-D: variable "ensure"  was declared but never referenced
+  	u8 ensure;
+User\main.c(202): warning:  #177-D: variable "str"  was declared but never referenced
+  	char str[64];			  
+User\main.c(203): warning:  #177-D: variable "key"  was declared but never referenced
+  	u8 key;
+User\main.c(291): warning:  #111-D: statement is unreachable
+  					break;
+User\main.c(328): warning:  #111-D: statement is unreachable
+  					break;
+User\main.c(216): warning:  #177-D: variable "time"  was declared but never referenced
+  	u16 num=0,num2=0,time3=0,time;
+User\main.c(219): warning:  #177-D: variable "buf"  was declared but never referenced
+  	u8 buf[64];
+User\main.c(402): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "char *restrict"
+  				sprintf(buf,"请%02d秒后重试", sys.errTime);
+User\main.c(414): warning:  #940-D: missing return statement at end of non-void function "DisErrCnt" 
+  }
+User\main.c(456): warning:  #111-D: statement is unreachable
+  				break;
+User\main.c(496): warning:  #111-D: statement is unreachable
+  				break;
+User\main.c(649): warning:  #940-D: missing return statement at end of non-void function "Add_Rfid" 
+  }
+User\main.c(577): warning:  #177-D: variable "time6"  was declared but never referenced
+  	u16 time6=0;
+User\main.c(578): warning:  #550-D: variable "card_size"  was set but never used
+  	u8 i,key_num,status=1,card_size;
+User\main.c(661): warning:  #68-D: integer conversion resulted in a change of sign
+  		if(DisErrCnt())return -1;//错误次数超限
+User\main.c(684): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "char *restrict"
+  				sprintf(prtfbuf,"RFID:%d匹配成功",j);
+User\main.c(653): warning:  #550-D: variable "card_size"  was set but never used
+  	u8 i,j,status=1,card_size;
+User\main.c(725): warning:  #514-D: pointless comparison of unsigned integer with a negative constant
+  		if(key_num != -1)
+User\main.c(739): warning:  #111-D: statement is unreachable
+  					return -1;
+User\main.c(739): warning:  #68-D: integer conversion resulted in a change of sign
+  					return -1;
+User\main.c(741): warning:  #111-D: statement is unreachable
+  					break;
+User\main.c(760): warning:  #111-D: statement is unreachable
+  					break;
+User\main.c(764): warning:  #111-D: statement is unreachable
+  					break;
+User\main.c(540): warning: C4487E: read from variable 'pwd' with offset out of bounds
+}
+User\main.c(540): warning: C4487E: read from variable 'pwd' with offset out of bounds
+}
+User\main.c: 29 warnings, 0 errors
+compiling stm32f10x_tim.c...
+Warning: C4008W: splitting LDM/STM has no benefit
+Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c: 1 warning, 0 errors
+compiling stm32f10x_pwr.c...
+Warning: C4008W: splitting LDM/STM has no benefit
+Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_pwr.c: 1 warning, 0 errors
+compiling stm32f10x_bkp.c...
+Warning: C4008W: splitting LDM/STM has no benefit
+Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_bkp.c: 1 warning, 0 errors
+compiling stm32f10x_rtc.c...
+Warning: C4008W: splitting LDM/STM has no benefit
+Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_rtc.c: 1 warning, 0 errors
+compiling stm32f10x_usart.c...
+Warning: C4008W: splitting LDM/STM has no benefit
+Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_usart.c: 1 warning, 0 errors
+compiling stm32f10x_flash.c...
+Warning: C4008W: splitting LDM/STM has no benefit
+Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_flash.c: 1 warning, 0 errors
+compiling stm32f10x_spi.c...
+Warning: C4008W: splitting LDM/STM has no benefit
+Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_spi.c: 1 warning, 0 errors
+compiling system_stm32f10x.c...
+Warning: C4008W: splitting LDM/STM has no benefit
+Libraries\CMSIS\system_stm32f10x.c: 1 warning, 0 errors
+compiling core_cm3.c...
+Warning: C4008W: splitting LDM/STM has no benefit
+Libraries\CMSIS\core_cm3.c: 1 warning, 0 errors
+compiling beep.c...
+Warning: C4008W: splitting LDM/STM has no benefit
+APP\beep\beep.c: 1 warning, 0 errors
+compiling led.c...
+Warning: C4008W: splitting LDM/STM has no benefit
+APP\led\led.c: 1 warning, 0 errors
+compiling dc_motor.c...
+Warning: C4008W: splitting LDM/STM has no benefit
+APP\dc_motor\dc_motor.c: 1 warning, 0 errors
+compiling rtc.c...
+Warning: C4008W: splitting LDM/STM has no benefit
+APP\rtc\rtc.c: 1 warning, 0 errors
+compiling key.c...
+Warning: C4008W: splitting LDM/STM has no benefit
+APP\key\key.c: 1 warning, 0 errors
+compiling iic.c...
+Warning: C4008W: splitting LDM/STM has no benefit
+APP\iic\iic.c: 1 warning, 0 errors
+compiling oled.c...
+Warning: C4008W: splitting LDM/STM has no benefit
+APP\oled\oled.c(158): warning:  #68-D: integer conversion resulted in a change of sign
+  	else {incx=-1;delta_x=-delta_x;} 
+APP\oled\oled.c(161): warning:  #68-D: integer conversion resulted in a change of sign
+  	else{incy=-1;delta_y=-delta_y;} 
+APP\oled\oled.c(315): warning:  #186-D: pointless comparison of unsigned integer with zero
+  		if(di<0)
+APP\oled\oled.c: 4 warnings, 0 errors
+compiling system.c...
+Warning: C4008W: splitting LDM/STM has no benefit
+Public\system.c: 1 warning, 0 errors
+compiling SysTick.c...
+Warning: C4008W: splitting LDM/STM has no benefit
+Public\SysTick.c: 1 warning, 0 errors
+compiling RFID.c...
+Warning: C4008W: splitting LDM/STM has no benefit
+APP\RFID\RFID.c: 1 warning, 0 errors
+compiling usart.c...
+Warning: C4008W: splitting LDM/STM has no benefit
+Public\usart.c(181): warning:  #1-D: last line of file ends without a newline
+  }
+Public\usart.c: 2 warnings, 0 errors
+compiling stmflash.c...
+Warning: C4008W: splitting LDM/STM has no benefit
+Public\stmflash.c: 1 warning, 0 errors
+linking...
+Program Size: Code=17916 RO-data=13416 RW-data=128 ZI-data=4424  
+FromELF: creating hex file...
+".\Obj\Template.axf" - 0 Error(s), 59 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F1xx_DFP.1.0.5.pack
+                Keil.STM32F1xx_DFP.1.0.5
+                STMicroelectronics STM32F1 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_Target_1
+  E:\environment\mdk5\Arm\Packs\Keil\STM32F1xx_DFP\1.0.5\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+Build Time Elapsed:  00:00:04
+</pre>
+</body>
+</html>
